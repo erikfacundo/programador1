@@ -2,3 +2,5 @@ plantas varias
 planta 1
 planta 2 
 planta 3
+pizza
+galletitas
