@@ -1,0 +1,16 @@
+h1{
+    text-transform: uppercase; /*mayuscula*/
+    text-align: center; /*centrar*/
+    font-family: Arial, Helvetica, sans-serif;
+    color: green;
+
+}
+h2{
+    text-transform: uppercase; /*mayuscula*/
+    color: darkolivegreen;
+    font-family: Arial, Helvetica, sans-serif;
+} 
+p{
+    color: darkolivegreen;
+    font-family: Arial, Helvetica, sans-serif;
+}

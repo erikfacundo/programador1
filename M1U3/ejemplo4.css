@@ -1,0 +1,38 @@
+h1{
+    text-transform: uppercase; /*mayuscula*/
+    text-align: center; /*centrar*/
+    font-family: Arial, Helvetica, sans-serif;
+    color: green;
+
+}
+h2{
+    text-transform: uppercase; /*mayuscula*/
+    color: darkolivegreen;
+    font-family: Arial, Helvetica, sans-serif;
+} 
+p{
+    color: darkolivegreen;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*Aca trabajo en otra clase*/
+.destacado{
+    color: brown;
+    font-weight: bold;
+} 
+#amarillo{
+    background-color: yellow;
+}
+
+#verde{
+    background-color: greenyellow;
+}
+img {
+    filter: grayscale(6%) sepia(3%) blur(1px) contrast(146%);
+
+}
+
+img:hover{
+    filter: grayscale(0%);
+        
+}
