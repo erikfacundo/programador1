@@ -1,0 +1,21 @@
+body{
+    background-color: grey;
+    text-align: center;
+}
+
+textarea {
+    width: 500px;
+    height: 200px;
+}
+
+h1{
+    padding-left: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
+}
+
+p{
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}

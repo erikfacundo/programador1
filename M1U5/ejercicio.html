@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+</ul>
+<button class= "pink all" id = "1" onclick="gfg_Run2()" style="padding: 100px 100px; background-color: yellow;" >
+Amarillo
+</button>
+<button class= "pink all" id = "2" onclick="gfg_Run1()" style="padding: 100px 100px; background-color: blue;">
+Azul
+</button>
+<button class= "pink all" id = "3" onclick="gfg_Run()" style="padding: 100px 100px; background-color: red;">
+Rojo
+</button>
+<ul>
+
+    <script>
+        var el_up = document.getElementById("GFG_UP"); 
+            var el_down = document.getElementById("GFG_DOWN"); 
+            var str = "Click on button to change the background color"; 
+          
+            el_up.innerHTML = str; 
+          
+            function changeColor(color) { 
+                document.body.style.background = color; 
+            } 
+              
+            function gfg_Run() { 
+                changeColor('red'); 
+                el_down.innerHTML = "Background Color changed"; 
+            }          
+            
+             var el_up1 = document.getElementById("GFG_UP1"); 
+            var el_down1 = document.getElementById("GFG_DOWN1"); 
+            var str1 = "Click on button to change the background color"; 
+          
+            el_up.innerHTML = str; 
+          
+            function changeColor(color) { 
+                document.body.style.background = color; 
+            } 
+              
+            function gfg_Run1() { 
+                changeColor('blue'); 
+                el_down.innerHTML = "Background Color changed"; 
+            }          
+             var el_up2 = document.getElementById("GFG_UP2"); 
+            var el_down2 = document.getElementById("GFG_DOWN2"); 
+            var str2 = "Click on button to change the background color"; 
+          
+            el_up.innerHTML = str; 
+          
+            function changeColor(color) { 
+                document.body.style.background = color; 
+            } 
+              
+            function gfg_Run2() { 
+                changeColor('yellow'); 
+                el_down.innerHTML = "Background Color changed"; 
+            }          
+    </script>
+</body>
+</html>
