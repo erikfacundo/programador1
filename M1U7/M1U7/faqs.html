@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="Programacion 1/M1U7/">
+  <title>Aplomo</title>
+<header class="p-3 bg-dark text-white">
+    <div class="container">
+      <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+        <a href="index.html">
+          
+          <img src="img/index.png" alt="index" width="60" height="60">
+        </a>
+
+        <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+          <li><a href="index.html" class="nav-link px-2 text-secondary">Home</a>
+          <li><a href="galeria.html" class="nav-link px-2 text-white">Proyectos</a></li>
+          <li><a href="contacto.html" class="nav-link px-2 text-white">Contactenos</a>
+          <li><a href="faqs.html" class="nav-link px-2 text-white">FAQs</a></li>
+          <li><a href="#" class="nav-link px-2 text-white">About</a></li>
+        </ul>
+
+        <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
+          <input type="search" class="form-control form-control-dark" placeholder="Search..." aria-label="Search" style="width: auto;">
+        </form>
+  </div>
+</div>
+</header>
+<h3>Parking <abbr title="Frequently Asked Questions">FAQ</abbr>s</h3>
+<dl class="faq">
+  <dt>
+    <button type="button" aria-expanded="false" aria-controls="faq1_desc" style="font-family: 'Secular One', sans-serif;">¿Qué me conviene elegir country, barrio o barrio privado?</button>
+  </dt>
+  <dd>
+    <div id="faq1_desc" class="desc" style="font-family: 'Secular One', sans-serif;">
+      En un barrio privado los terrenos son más chicos, las expensas son menores y no hay grandes superficies para actividades recreativas y deportivas.
+
+En un country los costos son un poco mayores, dado que hay mas oferta de actividades y mejor infraestructura, Suelen contar con vigilancia y mantenimiento de los lugares comunes
+
+    </div>
+  </dd>
+  <dt>
+    <button type="button" aria-expanded="false" aria-controls="faq2_desc" style="font-family: 'Secular One', sans-serif;">¿Conviene elegir el terreno con el arquitecto?</button>
+  </dt>
+  <dd>
+    <div id="faq2_desc" class="desc" style="font-family: 'Secular One', sans-serif;">Es conveniente ya que el arquitecto te aconsejara sobre diferentes factores que influyen en el terreno, Como ser asoleamiento,. Metros que se pueden construir, perfil de barrio y drenajes de la zona.-
+
+    </div>
+  </dd>
+  <dt>
+    <button type="button" aria-expanded="false" aria-controls="faq3_desc" style="font-family: 'Secular One', sans-serif;">¿Qué dudas me aclara el arquitecto en la primera reunión?</button>
+  </dt>
+  <dd>
+    <div id="faq3_desc" class="desc" style="font-family: 'Secular One', sans-serif;">
+      En la primera reunión se suele consultar las necesidades puntuales de cada obra , casa que se realiza como puede ser cantidad de ambientes,. Necesidades especiales como ser playroom, .laundry , spa.-
+
+Juntos trataremos de encontrar la estética de la obra,. Materiales, colores, techos volúmenes, estilos.- y así poder crear una casa a medida de los clientes.
+
+Juntos también programaremos la obra y la posibilidad de realizar la misma en etapas y con posibles ampliaciones
+    </div>
+  </dd>
+  <dt>
+    <button type="button" aria-expanded="false" aria-controls="faq4_desc" style="font-family: 'Secular One', sans-serif;">¿Se puede construir el proyecto de otro arquitecto?</button>
+  </dt>
+  <dd>
+    <div id="faq4_desc" class="desc" style="font-family: 'Secular One', sans-serif;">
+      SI se puede ,Te ofrecemos  la mano de obra y la dirección de obra para realizar dicho proyecto.-
+    </div>
+  </dd>
+</dl>
+    
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+  </script>
+  
+  <script>
+  
+  class DisclosureButton {
+    constructor(buttonNode) {
+      this.buttonNode = buttonNode;
+      this.controlledNode = false;
+  
+      var id = this.buttonNode.getAttribute('aria-controls');
+  
+      if (id) {
+        this.controlledNode = document.getElementById(id);
+      }
+  
+      this.buttonNode.setAttribute('aria-expanded', 'false');
+      this.hideContent();
+  
+      this.buttonNode.addEventListener('click', this.onClick.bind(this));
+      this.buttonNode.addEventListener('focus', this.onFocus.bind(this));
+      this.buttonNode.addEventListener('blur', this.onBlur.bind(this));
+    }
+  
+    showContent() {
+      if (this.controlledNode) {
+        this.controlledNode.style.display = 'block';
+      }
+    }
+  
+    hideContent() {
+      if (this.controlledNode) {
+        this.controlledNode.style.display = 'none';
+      }
+    }
+  
+    toggleExpand() {
+      if (this.buttonNode.getAttribute('aria-expanded') === 'true') {
+        this.buttonNode.setAttribute('aria-expanded', 'false');
+        this.hideContent();
+      } else {
+        this.buttonNode.setAttribute('aria-expanded', 'true');
+        this.showContent();
+      }
+    }
+  
+    /* EVENT HANDLERS */
+  
+    onClick() {
+      this.toggleExpand();
+    }
+  
+    onFocus() {
+      this.buttonNode.classList.add('focus');
+    }
+  
+    onBlur() {
+      this.buttonNode.classList.remove('focus');
+    }
+  }
+  
+  /* Initialize Hide/Show Buttons */
+  
+  window.addEventListener(
+    'load',
+    function () {
+      var buttons = document.querySelectorAll(
+        'button[aria-expanded][aria-controls]'
+      );
+  
+      for (var i = 0; i < buttons.length; i++) {
+        new DisclosureButton(buttons[i]);
+      }
+    },
+    false
+  );
+  </script>
+  
+
+</body>
+<footer class="footer-distributed">
+
+  <div class="footer-right">
+
+    <a href="https://www.instagram.com/aplomo.arq/?hl=es-la"><i class="fa fa-instagram"> <img src="img/insta.png" alt="instagram"></i></a>
+    <a href="https://www.instagram.com/aplomo.arq/?hl=es-la"><i class="fa fa-instagram"> <img src="img/insta.png" alt="instagram"></i></a>
+    <a href="https://www.instagram.com/aplomo.arq/?hl=es-la"><i class="fa fa-instagram"> <img src="img/insta.png" alt="instagram"></i></a>
+    <a href="https://www.instagram.com/aplomo.arq/?hl=es-la"><i class="fa fa-instagram"> <img src="img/insta.png" alt="instagram"></i></a>
+
+  </div>
+
+
+    <p class="footer-links">
+      <a class="link-1" href="#">Home</a>
+
+      <a href="#">Blog</a>
+
+      <a href="#">Pricing</a>
+
+      <a href="#">About</a>
+
+      <a href="#">Faq</a>
+
+      <a href="#">Contact</a>
+    </p>
+
+    <p>Company Name &copy; 2015</p>
+  </div>
+
+</footer>
+
+</html>
